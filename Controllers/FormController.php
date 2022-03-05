@@ -121,7 +121,6 @@ class FormController extends Controller
 	/*
 		Configuração de Ouvidoria do site
 	*/
-	[]
 	public function trocarFotoPerfil()
 	{
 		$r = new Registros();

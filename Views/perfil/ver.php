@@ -162,7 +162,6 @@
                     <div id="info">
                         Ultima promoção: <span class="ultima-promocao"><?php echo date('d/m/Y', strtotime($usuario['ultima_promocao'])); ?></span> 
                         Promovido por: <span class="promovido-por"><?php echo $usuario['promovido_por']; ?></span> 
-                        Inscrição Helper: <span class="red">Não</span>
                         Status: <span class="<?php echo($usuario['status_id'] == 1)?'green':'red'; ?>"><?php echo $usuario['status']; ?></span>
                     </div>
 

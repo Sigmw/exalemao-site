@@ -150,6 +150,8 @@ class RegistrosController extends Controller
         }
     }
 
+    
+
     public function editRegistro($id)
     {
         $r = new Registros();
@@ -191,63 +193,6 @@ class RegistrosController extends Controller
         exit;
     }
 
-    public function confiancas()
-    {
-        $r = new Registros();
-
-        if ($this->acesso->getInfo('patente') <= 7) {
-            $this->arrayInfo['page_active'] = 'registros';
-            $this->arrayInfo['pageName'] = 'Confianças';
-            $this->arrayInfo['acesso'] = $this->acesso;
-            $this->arrayInfo['registros'] = $r->getRegistrosConfianca();
-
-            /* Fara com que a página seja carregada */
-            $this->loadTemplate('registros/confiancas', $this->arrayInfo);
-        } else {
-            $l = new \Models\Logs();
-            $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
-            $l->addLog('invasao', $msg);
-            $_SESSION['edit_registro'] = 'Você está tentando acessar uma página disponível apenas para o Alto Comando.';
-            $_SESSION['edit_registro_tipo'] = 'danger';
-            header("Location: " . BASE . "registros");
-            exit;
-        }
-    }
-
-    public function confianca($tipo, $id_registro)
-    {
-        $r = new Registros();
-        $permitidos = [1, 2];
-
-        if ($this->acesso->getInfo('patente') <= 10 && is_numeric($tipo) && is_numeric($id_registro) && in_array($tipo, $permitidos)) {
-            $registro = $r->getMembroByID($id_registro);
-
-            $data = date('Y-m-d H:i:s');
-
-            if ($registro['patente_id'] >= 7) {
-                if ($tipo == 1 && $registro['confianca'] <= 95) {
-                    $r->confiarRegistro($id_registro, $data, $this->acesso->getInfo('nickname'), $tipo, 5);
-                } elseif ($tipo == 2 && $registro['confianca'] >= 5) {
-                    $r->confiarRegistro($id_registro, $data, $this->acesso->getInfo('nickname'), $tipo, -5);
-                }
-
-                $_SESSION['edit_registro'] = 'Confiança para com o(a) membro ' . $registro['nickname'] . ' alterada com sucesso!';
-                $_SESSION['edit_registro_tipo'] = 'success';
-            }
-        }
-
-        if ($this->acesso->getInfo('patente') >= 7) {
-            $l = new \Models\Logs();
-            $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
-            $l->addLog('invasao', $msg);
-
-            $_SESSION['edit_registro'] = 'Você está tentando acessar uma página disponível apenas para o Alto Comando.';
-            $_SESSION['edit_registro_tipo'] = 'danger';
-        }
-
-        header("Location: " . BASE . "registros/confiancas");
-        exit;
-    }
 
     public function cartao()
     {

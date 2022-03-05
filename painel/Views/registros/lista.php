@@ -53,8 +53,7 @@
                                             <?php if ($acesso->podePromover($registro['patente_id'], $acesso->getInfo('patente'))) : ?>
                                                 <a style="background: #dec52e; border-color: #dec52e;"href="<?php echo BASE; ?>registros/editar/<?php echo $registro['id']; ?>" class="btn btn-info" ><i class="fas fa-pencil-alt"></i></a>
                                             <?php endif; ?>
-
-                                            <?php if ($acesso->getInfo('patente') <= 4): ?>
+                                            <?php if ($acesso->getInfo('patente') <= 10): ?>
                                                 <a href="<?php echo BASE; ?>registros/delete/<?php echo $registro['id']; ?>" class="btn btn-danger" onclick="return confirm('Tem certeza que deseja deletar este registro?')" ><i class="fas fa-trash"></i></a>
                                             <?php endif; ?>
                                         </td>

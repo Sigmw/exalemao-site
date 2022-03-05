@@ -39,14 +39,7 @@
                 </select>
             </div>
  <div class="form-group">
-                <label for="executivo">Executivo</label>
-                <select class="form-control" id="executivo" name="executivo" required>
-                    <option value="">Cargo executivo?</option>
-                    <option value="0" <?php echo($registro['executivo'] == 0)?'selected':''; ?>>Não</option>
-                    <option value="1" <?php echo($registro['executivo'] == 1)?'selected':''; ?>>Sim</option>
-                   
-
-                </select>
+               
             </div>
 
 
