@@ -5,12 +5,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?php echo $viewData['pageName'] ?> | Serviço Federal de Inteligência</title>
-    <meta name="description" content="<?php echo $viewData['pageName'] ?> | Serviço Federal de Inteligência">
+    <title><?php echo $viewData['pageName'] ?> | Exército Alemão Habbo</title>
+    <meta name="description" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:site_name" content="<?php echo $viewData['pageName'] ?> | Serviço Federal de Inteligência">
-    <meta property="og:title" content="<?php echo $viewData['pageName'] ?> | Serviço Federal de Inteligência">
+    <meta property="og:site_name" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
+    <meta property="og:title" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta property="og:description" content="<?php echo $viewData['description']; ?>">
     <meta property="og:url" content="<?php echo BASE; ?>">
     <meta property="og:locale" content="pt_BR">
@@ -18,14 +18,14 @@
     <!-- <meta property="og:image:width" content="620"> 
 	<meta property="og:image:height" content="316">  -->
     <meta name="twitter:site" content="@sihboficial" />
-    <meta name="twitter:title" content="<?php echo $viewData['pageName'] ?> | Serviço Federal de Inteligência" />
+    <meta name="twitter:title" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@sihboficial" />
     <meta name="twitter:creator" content="@sihboficial" />
     <meta name="theme-color" content="#1E1E1F">
 
-   <link rel="apple-touch-icon" href="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif">
-    <link rel="shortcut icon" href="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif">
+   <link rel="apple-touch-icon" href="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif">
+    <link rel="shortcut icon" href="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif">
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="<?php echo BASE; ?>assets/vendor/bootstrap/css/bootstrap.min.css">
@@ -91,17 +91,14 @@
         <!-- ============================================================== -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-dark fixed-top" style="height: 30px;">
-            <img style="margin-left: 1%;" src="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif" alt="SFI Emblema" />
-                <a class="navbar-brand" style="color: #fff;" href="<?php echo BASE; ?>">Serviço Federal de Inteligência</a>
+            <img style="margin-left: 1%;" src="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif" alt="AL Emblema" />
+                <a class="navbar-brand" style="color: #fff;" href="<?php echo BASE; ?>">Exército Alemão Habbo</a>
                 <button style="float: right; top: 5%;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto navbar-right-top">
                         <li class="nav-item">
-                            <div id="custom-search" class="top-search-bar">
-                                <input class="form-control" type="text" placeholder="Procurar..">
-                            </div>
                         </li>
                         <li class="nav-item dropdown nav-user">
                             <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" style="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="http://www.habbo.com.br/habbo-imaging/avatarimage?&user=<?php echo $viewData['acesso']->getInfo('nickname'); ?>&action=std&direction=3&head_direction=3&img_format=png&gesture=std&headonly=1&size=b" alt="" class="user-avatar-md rounded-circle"></a>
@@ -112,7 +109,7 @@
                                     <?php echo $viewData['acesso']->patente_nome; ?></span>
                                 </div>
 
-                                <a class="dropdown-item" href="<?php echo BASE; ?>home/cartao"><i class="fas fa-address-card mr-2"></i>Bater cartão - <?php echo ($viewData['acesso']->deuEntrada($viewData['acesso']->getInfo('id_registro'))) ? 'saída' : 'entrada'; ?></a>
+
 
                                 <a class="dropdown-item" href="<?php echo BASE_PAI; ?>perfil/sair"><i class="fas fa-power-off mr-2"></i>Sair</a>
                             </div>
@@ -128,7 +125,7 @@
         <!-- left sidebar -->
         <!-- ============================================================== -->
         <div class="nav-left-sidebar sidebar-dark" style="position: absolute;">
-            <div class="menu-list">
+            <div class="menu-list" style="background: #330000">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -384,13 +381,12 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                            Copyright © 2010 - <?php echo date('Y'); ?> Serviço Federal de Inteligência
-                            - Feito por: <span style="color: darkblue;">Fabbri</span>.
+                            Copyright © 2010 - <?php echo date('Y'); ?> Exército Alemão Habbo
+                            - Feito por: <span style="color:#e6b800;">Glayve</span>.
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="text-md-right footer-links d-none d-sm-block">
                                 <a href="<?php echo BASE_PAI; ?>">Voltar ao site</a>
-                                <a href="<?php echo BASE_PAI; ?>sobre/historia">Sobre nós</a>
                             </div>
                         </div>
                     </div>

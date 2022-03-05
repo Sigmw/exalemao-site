@@ -4,27 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?php echo $viewData['pageName'] ?> | Serviço de Inteligência Habbiano</title>
-    <meta name="description" content="<?php echo $viewData['pageName'] ?> | Serviço de Inteligência Habbiano">
+    <title><?php echo $viewData['pageName'] ?> | Exército Alemão Habbo</title>
+    <meta name="description" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:site_name" content="Diário Brasileiro - Anonimo">
-    <meta property="og:title" content="<?php echo $viewData['pageName'] ?> | Serviço de Inteligência Habbiano">
+    <meta property="og:title" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta property="og:description" content="<?php echo $viewData['description']; ?>">
     <meta property="og:url" content="<?php echo BASE; ?>">
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:image" content="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif">
+    <meta property="og:image" content="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif">
     <!-- <meta property="og:image:width" content="620"> 
 	<meta property="og:image:height" content="316">  -->
-    <meta name="twitter:site" content="@SFIoficial" />
+    <meta name="twitter:site" content="@exalemaohb" />
     <meta name="twitter:title" content="<?php echo $viewData['pageName'] ?> | Serviço de Inteligência Habbiano" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@SFIoficial" />
-    <meta name="twitter:creator" content="@SFIoficial" />
+    <meta name="twitter:site" content="@exalemaohb" />
+    <meta name="twitter:creator" content="@exalemaohb" />
     <meta name="theme-color" content="#1E1E1F">
 
-    <link rel="apple-touch-icon" href="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif">
-    <link rel="shortcut icon" href="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif">
+    <link rel="apple-touch-icon" href="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif">
+    <link rel="shortcut icon" href="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
@@ -57,7 +57,7 @@
                     if($usuario['avatar'] == "https://i.imgur.com/38HBHH9.png") {
                         $imgAvatar = "https://www.habbo.com.br/habbo-imaging/avatarimage?user=".$usuario['nickname']."&action=std&direction=3&head_direction=3&gesture=sml&size=l";
                         $styleAvatar = "margin-left: 15px;";
-                        $styleDiv = "background: url(https://media.discordapp.net/attachments/927396237278322710/927470083268313098/Brasao_SFI_png.png?width=473&height=473);
+                        $styleDiv = "background: url(https://i.imgur.com/Kbr1UAP.png);
                         background-repeat: no-repeat;
                         background-size: 100% 100%;";
                     }
@@ -392,18 +392,18 @@
 
                     <div id="amigos" class="<?php echo($usuario['vip'] == 1)?'':'nao-vip'; ?>">
                         <div class="amigo coracao">
-                            <p><?php echo($usuario['vip'] == 1)?$amigos['coracao']:'SFI'; ?></p>
-                            <img src="http://www.habbo.com.br/habbo-imaging/avatarimage?&user=<?php echo($usuario['vip'] == 1)?$amigos['coracao']:'SFI'; ?>&action=std&direction=4&head_direction=4&img_format=png&gesture=std&headonly=1&size=b" alt="Head habbo">
+                            <p><?php echo($usuario['vip'] == 1)?$amigos['coracao']:'Yuri-Takahashi'; ?></p>
+                            <img src="http://www.habbo.com.br/habbo-imaging/avatarimage?&user=<?php echo($usuario['vip'] == 1)?$amigos['coracao']:'Yuri-Takahashi'; ?>&action=std&direction=4&head_direction=4&img_format=png&gesture=std&headonly=1&size=b" alt="Head habbo">
                         </div>
 
                         <div class="amigo feliz">
-                            <p><?php echo($usuario['vip'] == 1)?$amigos['feliz']:'SFI'; ?></p>
-                            <img src="http://www.habbo.com.br/habbo-imaging/avatarimage?&user=<?php echo($usuario['vip'] == 1)?$amigos['feliz']:'SFI'; ?>&action=std&direction=4&head_direction=4&img_format=png&gesture=std&headonly=1&size=b" alt="Head habbo">
+                            <p><?php echo($usuario['vip'] == 1)?$amigos['feliz']:'Yuri-Takahashi'; ?></p>
+                            <img src="http://www.habbo.com.br/habbo-imaging/avatarimage?&user=<?php echo($usuario['vip'] == 1)?$amigos['feliz']:'Yuri-Takahashi'; ?>&action=std&direction=4&head_direction=4&img_format=png&gesture=std&headonly=1&size=b" alt="Head habbo">
                         </div>
 
                         <div class="amigo money">
-                            <p><?php echo($usuario['vip'] == 1)?$amigos['money']:'SFI'; ?></p>
-                            <img src="http://www.habbo.com.br/habbo-imaging/avatarimage?&user=<?php echo($usuario['vip'] == 1)?$amigos['money']:'SFI'; ?>&action=std&direction=4&head_direction=4&img_format=png&gesture=std&headonly=1&size=b" alt="Head habbo">
+                            <p><?php echo($usuario['vip'] == 1)?$amigos['money']:'Yuri-Takahashi'; ?></p>
+                            <img src="http://www.habbo.com.br/habbo-imaging/avatarimage?&user=<?php echo($usuario['vip'] == 1)?$amigos['money']:'Yuri-Takahashi'; ?>&action=std&direction=4&head_direction=4&img_format=png&gesture=std&headonly=1&size=b" alt="Head habbo">
                         </div>
                         
                         <?php if ($usuario['vip'] != 1): ?>
@@ -529,72 +529,22 @@
 
 
     <section style="background:#000;">
-        <div class="container d-flex at" style="position:relative;">
-            <div>
-                <img src="https://i.imgur.com/HlNxAr3.png" alt="Divisor" style="width:100%;height:26px;" />
-                <div class="anuncio mb-10">
-                   
-                </div>
-            </div>
-
-            <div class="ml-10 twitter-social">
-                <div class="tt-head">
-                    <img src="https://i.imgur.com/RSwmMtw.png" alt="Tweets" />
-
-                    <span>
-                        <h3>SOCIAL SFI</h3>
-                        <small>@SFIHabbo</small>
-                    </span>
-                </div>
-
-                <div class="tt-body"></div>
-
-                <a href="https://twitter.com/SFIHabbo" id='siga-a-SFI'>Siga o SFI!</a>
-            </div>
-
-        </div>
     </section>
 
     <footer>
-        <div class="footer-head">
-            <div class="container">
-                <div style="width:730px;" class="d-flex space-between align-center">
-                     <img src="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif" style="margin-top: -0.5%; margin-left: 1%;"> <img src="https://media.discordapp.net/attachments/927396237278322710/927461498442358845/SFI_-_Mensagem3.png" style="position: absolute; margin-left: 4%; margin-top: 1%;" alt="SFI" />
-                    <ul>
-                        <li>
-                            <a href="<?php echo BASE; ?>">Início</a>
-                        </li>
-                        <li>
-                            <a href="<?php echo BASE; ?>apostilas/vip">Assine VIP</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
         <div class="container footer-body">
             <div style="width:840px;height:195px;">
-                <h3>SERVIÇO DE INTELIGÊNCIA HABBIANO</h3>
+                <h3>Exército Alemão Habbo</h3>
 
-                <ul>
-                    <li><a href="<?php echo BASE; ?>sobre/historia">Sobre nós</a></li>
-                </ul>
+
 
                 <p style="font-size:13px;font-weight:bold;margin-top:30px;">Copyright (c) <?php echo date('Y') ?>. Todos os direitos reservados.</p>
                 <p style="font-size:12px;width: 550px;">
                     Este site da web não possui vínculo com nenhuma organização de inteligência da vira real e não é marca de nenhuma das afiliadas da Sulake Corporation Oy.<br /> Este é um jogo de simulação e nenhum acontecimento deve ser levado em consideração!<br /> Este site foi desenvolvido por
-                      <a href="http://habbo.com.br/profile/GeorgeSiilva" class="desenvolvedor">George Silva (GeorgeSiilva)</a>, <a href="http://habbo.com.br/profile/majoryanzinho" class="desenvolvedor" id="yan">Yan Lyra (majoryanzinho)</a> e <a href="https://github.com/the1scient" target="_blank" class="desenvolvedor">Guilherme (Fabbri)</a>
+                      <a href="http://habbo.com.br/profile/GeorgeSiilva" class="desenvolvedor">George Silva (GeorgeSiilva)</a>, <a href="http://habbo.com.br/profile/majoryanzinho" class="desenvolvedor" id="yan">Yan Lyra (majoryanzinho)</a> e <a href="https://github.com/the1scient" target="_blank" class="desenvolvedor">Lucas (Glayve)</a>
                 </p>
 
-            </div>
-            <div class="d-flex socials align-center">
-                <a href="https://facebook.com/SFIHabbo">
-                    <img src="https://i.imgur.com/ATpfVkX.png" alt="Facebook" /> <strong>/SFIHabbo</strong>
-                </a>
-
-                <a href="https://instagram.com/SFIHabbo">
-                    <img src="https://i.imgur.com/Qpgbe9A.png" alt="Instagram" /> <strong>/SFIoficial</strong>
-                </a>
             </div>
         </div>
     </footer>

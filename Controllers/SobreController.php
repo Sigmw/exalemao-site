@@ -88,44 +88,9 @@ class SobreController extends Controller
     /*
 		Configuração da Página Sobre/Estatuto do site
 	*/
-	public function estatuto()
-	{
-        $this->arrayInfo['pageName'] = 'Estatuto do Serviço Federal de Inteligência';
-		$t = new Textos();
-		$this->arrayInfo['texto'] = $t->getTexto(4);
-		
-		if($this->acesso->isLogged()) {
-		    	/* Fara com que a página seja carregada APENAS SE o usuário estiver logado */
-		$this->loadTemplate('sobre/estatuto', $this->arrayInfo);
-		}
-		else {
-		    $this->loadTemplate('home', $this->arrayInfo);
-		}
-	
-    }
-    
+
     /*
 		Configuração da Página Sobre/Atos normativos do site
 	*/
-	public function prazos()
-	{
-        $this->arrayInfo['pageName'] = 'Prazos de promoção';
-		$t = new Textos();
-		$this->arrayInfo['texto'] = $t->getTexto(5);
-		
-		/* Fara com que a página seja carregada */
-		$this->loadTemplate('sobre/prazos', $this->arrayInfo);
-	}
-	
-	public function registros()
-	{
-	    $this->arrayInfo['pageName'] = 'Registros';
-	    
-	    $r = new Registros();
-	    
-	   $this->arrayInfo['nickname'] = $r->getMembroByID(1);
-	    
-	    $this->loadTemplate("sobre/registros", $this->arrayInfo);
-	    
-	}
+
 }

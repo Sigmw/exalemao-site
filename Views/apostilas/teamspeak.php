@@ -6,7 +6,7 @@
             <div class="breadcrumb">
                 <a href="<?php echo BASE; ?>">Início</a>
                 <a href="<?php echo BASE; ?>apostilas">Apostilas</a>
-                <a href="<?php echo BASE; ?>apostilas/discord" class="last">Discord</a>
+                <a href="<?php echo BASE; ?>apostilas/discord" class="last">Teamspeak</a>
             </div>
 
             <h2 class="titulo">Discord</h2>

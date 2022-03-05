@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+        <div class="col-xl-3 col-lg-3 col-md-6 c'ol-sm-12 col-12">
             <div class="card border-3 border-top border-top-primary" >
                 <div class="card-body" style="background: #333;">
                     <h5 class="text-muted" style="color: beige !important;">Novos Membros</h5>
@@ -36,7 +36,7 @@
                     </div>
                     <?php if ($diferenca_alistados >= 0) : ?>
                         <div class="metric-label d-inline-block float-right text-success font-weight-bold">
-                            <span class="icon-circle-small icon-box-xs" style="background: black; "><i class="fa fa-fw fa-arrow-up" style="color: #0008ff;" ></i></span><span class="ml-1" style="color: #0008ff;"><?php echo intval($diferenca_alistados); ?>%</span>
+                            <span class="icon-circle-small icon-box-xs" style="background: black; "><i class="fa fa-fw fa-arrow-up" style="color: #991f00;" ></i></span><span class="ml-1" style="color: #e6b800;"><?php echo intval($diferenca_alistados); ?>%</span>
                         </div>
                     <?php else : ?>
                         <div class="metric-label d-inline-block float-right text-danger font-weight-bold">

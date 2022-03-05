@@ -120,7 +120,7 @@ h1.wiggle:hover {
                     <?php if ($viewData['acesso']->isLogged()): ?>
                     <li><a href="<?php echo BASE; ?>sobre/estatuto">Estatuto</a></li>
                     <?php endif; ?>
-                    <li><a href="<?php echo BASE; ?>sobre/prazos">Prazos</a></li>
+                    <li><a href="<?php echo BASE; ?>sobre/comandantes">Comandantes</a></li>
                 </ul>
             </li>
 
@@ -218,9 +218,8 @@ h1.wiggle:hover {
 
                     <li><a href="<?php echo BASE; ?>sobre/hierarquia">Hierarquia</a></li>
                 <?php if ($viewData['acesso']->isLogged()): ?>
-                    <li><a href="<?php echo BASE; ?>sobre/estatuto">Estatuto</a></li>
                     <?php endif; ?>
-                    <li><a href="<?php echo BASE; ?>sobre/prazos">Prazos</a></li>
+                    <li><a href="<?php echo BASE; ?>sobre/comandantes">Comandantes</a></li>
                 </ul>
             </li>
 
@@ -233,20 +232,21 @@ h1.wiggle:hover {
                 </ul>
             </li> -->
 
+            <!-- COMPANHIAS
             <li class="nav-item <?php echo ($viewData['page_active'] == 'departamentos') ? 'active' : ''; ?> dropdown">
-                <a href="javascript:;" class="nav-link">Unidades</a>
+                <a href="javascript:;" class="nav-link">Companhia</a>
                 <ul>
                     <li><a href="<?php echo BASE; ?>departamentos/organizacao">Organização</a></li>
                     <li><a href="<?php echo BASE; ?>departamentos/instrucao">Instrução</a></li>
                     <li><a href="<?php echo BASE; ?>departamentos/comunicacao">Comunicação</a></li>
                 </ul>
             </li>
+                -->
 
             <li class="nav-item <?php echo ($viewData['page_active'] == 'apostilas') ? 'active' : ''; ?> dropdown">
                 <a href="javascript:;" class="nav-link">Apostilas</a>
                 <ul>
-                    <li><a href="<?php echo BASE; ?>apostilas/discord">Discord</a></li>
-                    <li><a href="<?php echo BASE; ?>apostilas/uniformes">Uniformes</a></li>
+                    <li><a href="<?php echo BASE; ?>apostilas/teamspeak">Teamspeak</a></li>
                     <li><a href="<?php echo BASE; ?>apostilas/fardamentos">Fardamentos</a></li>
                     <li><a href="<?php echo BASE; ?>apostilas/pele-e-cabelo">Pele e Cabelo</a></li>
                     
@@ -278,15 +278,8 @@ h1.wiggle:hover {
             </li>
             <?php endif; ?>
 
-            <li class="nav-item <?php echo ($viewData['page_active'] == 'financeiro') ? 'active' : ''; ?> dropdown">
-                <a href="javascript:;" class="nav-link">Financeiro</a>
-                <ul>
-                    <li><a href="<?php echo BASE; ?>financeiro/cargos_pagos">Cargos Pagos</a></li>
-                    <li><a href="<?php echo BASE; ?>financeiro/salarios">Salários</a></li>
-                    <li><a href="<?php echo BASE; ?>financeiro/sistema-de-indicacao">Sistema de Indicações</a></li>
-                </ul>
-            </li>
-
+            
+        
        <!--     <li class="nav-item <?php echo ($viewData['page_active'] == 'grupos') ? 'active' : ''; ?> dropdown">
                 <a href="javascript:;" class="nav-link">Grupos</a>
                 <ul>

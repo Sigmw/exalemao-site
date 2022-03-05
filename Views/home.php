@@ -109,10 +109,6 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo BASE; ?>sobre/estatuto">Regimento Institucional</a>
-                </li>
-
-                <li>
                     <a href="<?php echo BASE; ?>apostilas/uniformes">Fardamentos/Uniformes</a>
                 </li>
                     

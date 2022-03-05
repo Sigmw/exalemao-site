@@ -149,54 +149,29 @@ class ApostilasController extends Controller
     /*
 		Configuração da Página Apostilas/Discord do site
 	*/
-    public function discord()
+    public function teamspeak()
     {
         $this->arrayInfo['pageName'] = 'Discord';
 		$t = new Textos();
 		$this->arrayInfo['texto'] = $t->getTexto(19);
 
         /* Fara com que a página seja carregada */
-        $this->loadTemplate('apostilas/discord', $this->arrayInfo);
+        $this->loadTemplate('apostilas/teamspeak', $this->arrayInfo);
     }
 
     /*
 		Configuração da Página Apostilas/Habbo Etiqueta do site
 	*/
-    public function hb_etiqueta()
-    {
-        $this->arrayInfo['pageName'] = 'Habbo Etiqueta';
-		$t = new Textos();
-		$this->arrayInfo['texto'] = $t->getTexto(20);
 
-        /* Fara com que a página seja carregada */
-        $this->loadTemplate('apostilas/hb_etiqueta', $this->arrayInfo);
-    }
 
     /*
 		Configuração da Página Apostilas/Blacklist do site
 	*/
-    public function blacklist()
-    {
-        $this->arrayInfo['pageName'] = 'Blacklist';
-		$t = new Textos();
-		$this->arrayInfo['texto'] = $t->getTexto(21);
 
-        /* Fara com que a página seja carregada */
-        $this->loadTemplate('apostilas/blacklist', $this->arrayInfo);
-    }
 
     /*
 		Configuração da Página Apostilas/Como ser promovido? do site
 	*/
-    public function como_ser_promovido()
-    {
-        $this->arrayInfo['pageName'] = 'Como ser promovido?';
-		$t = new Textos();
-		$this->arrayInfo['texto'] = $t->getTexto(26);
-
-        /* Fara com que a página seja carregada */
-        $this->loadTemplate('apostilas/como_ser_promovido', $this->arrayInfo);
-    }
 
     /*
 		Configuração da Página Apostilas/Fardamentos do site
@@ -214,15 +189,7 @@ class ApostilasController extends Controller
     /*
 		Configuração da Página Apostilas/Uniformes do site
 	*/
-    public function uniformes()
-    {
-        $this->arrayInfo['pageName'] = 'Uniformes';
-		$t = new Textos();
-		$this->arrayInfo['texto'] = $t->getTexto(28);
 
-        /* Fara com que a página seja carregada */
-        $this->loadTemplate('apostilas/uniformes', $this->arrayInfo);
-    }
 
     /*
 		Configuração da Página Apostilas/Requisitos da Sede do site
@@ -269,15 +236,6 @@ class ApostilasController extends Controller
     /*
 		Configuração da Página Apostilas/Instruções de Ética e Conduta do site
 	*/
-    public function instrucoes_etica_conduta()
-    {
-        $this->arrayInfo['pageName'] = 'Instruções de Ética e Conduta';
-		$t = new Textos();
-		$this->arrayInfo['texto'] = $t->getTexto(28);
-
-        /* Fara com que a página seja carregada */
-        $this->loadTemplate('apostilas/instrucoes_etica_conduta', $this->arrayInfo);
-    }
 
 
 }

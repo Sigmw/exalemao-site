@@ -40,8 +40,6 @@
                 <ul>
                       <li><a href="<?php echo BASE; ?>sobre/historia">História</a></li>
                     <li><a href="<?php echo BASE; ?>sobre/comandantes">Comandantes</a></li>
-                  <!--  <li><a href="<?php echo BASE; ?>sobre/hierarquia">Hierarquia</a></li> -->
-                    <li><a href="<?php echo BASE; ?>sobre/prazos">Prazos</a></li> 
                 </ul>
             </div>
 

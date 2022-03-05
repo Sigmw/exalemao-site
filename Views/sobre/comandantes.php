@@ -9,7 +9,7 @@
                 <a href="<?php echo BASE; ?>sobre/comandantes" class="last">Comandantes</a>
             </div>
 
-            <h2 class="titulo">Comandantes do Serviço Federal de Inteligência</h2>
+            <h2 class="titulo">Comandantes do Exército Alemão</h2>
 
             <div style="padding:13px;font-size:13px;"><?php echo $texto['texto']; ?></div>
            
@@ -40,9 +40,7 @@
 
                 <ul>
                  <li><a href="<?php echo BASE; ?>sobre/historia">História</a></li>
-                  <!--  <li><a href="<?php echo BASE; ?>sobre/comandantes">Comandantes</a></li> -->
                     <li><a href="<?php echo BASE; ?>sobre/hierarquia">Hierarquia</a></li>
-                    <li><a href="<?php echo BASE; ?>sobre/prazos">Prazos</a></li> 
                 </ul>
             </div>
 
