@@ -45,41 +45,10 @@
                 </div>
             </div>
 
-            <div class="relacionadas mt-10">
-                <h4>MEU MENU</h4>
-
-                <ul>
-                    <li><a href="<?php echo BASE; ?>profile/<?php echo $acesso->getInfo('nickname'); ?>">Meu Perfil</a></li>
-                    <li class="active"><a href="<?php echo BASE; ?>perfil/configuracoes">Configurações</a></li>
-                    <li><a href="<?php echo BASE; ?>perfil/configuracoes-forum">Fórum</a></li>
-                    <li><a href="<?php echo BASE; ?>perfil/configuracoes-perfil">Configurações do Perfil</a></li>
-                </ul>
-            </div>
+      
         </div>
         <!-- ./RÁDIO, NAVEGAÇÃO RÁPIDA E LINKS -->
     </div>
 
-    <div class="mt-30 container pb-30 veja-tambem">
-            <h3>
-                <strong>VEJA</strong>
-                TAMBÉM
-            </h3>
-
-            <a style="background: black; color: beige;" href="<?php echo BASE; ?>apostilas/hb-etiqueta" id="etiqueta">
-                <strong>HABBO</strong>
-                ETIQUETA
-            </a>
-
-            <a style="background: black; color: black;" href="<?php echo BASE; ?>noticias" id="sihb">
-                <strong style="background: black; color: beige;">VER</strong>
-                <span style="background: black; color: beige;">NOTÍCIAS</span>
-            </a>
-
-            <a style="background: black; color: beige;" href="<?php echo BASE; ?>apostilas/discord" id="discord">
-                <strong>DISCORD</strong>
-                TUTORIAL
-            </a>
-
-        </div>
-
+    
 </div>

@@ -43,9 +43,9 @@
             </div>
 
             <div class="form-group">
-                <label for="cargo">Cargo</label>
+                <label for="cargo">Patente</label>
                 <select class="form-control" id="cargo" name="cargo" required>
-                    <option value="">Escolha um cargo</option>
+                    <option value="">Escolha uma patente</option>
                     <?php foreach ($patentes as $patente) : ?>
                         <?php if ($acesso->podePromover($patente['id'], $acesso->getInfo('patente'))) : ?>
                             <option value="<?php echo $patente['id']; ?>"><?php echo $patente['nome']; ?><?php if($patente['executivo'] != "")  {
@@ -57,14 +57,6 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="executivo">Executivo</label>
-                <select class="form-control" id="executivo" name="executivo" required>
-                    <option value="">Cargo executivo?</option>
-                    <option value="0" <?php echo($registro['executivo'] == 0)?'selected':''; ?>>Não</option>
-                    <option value="1" <?php echo($registro['executivo'] == 1)?'selected':''; ?>>Sim</option>
-                   
-
-                </select>
             </div>
 
 

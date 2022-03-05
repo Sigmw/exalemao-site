@@ -153,7 +153,7 @@ class Relatorios extends Model {
         
         
         
-        	$webhookurl = "https://discord.com/api/webhooks/930556345013391401/LJwSubhUPhwA-BnIyZCs4MXFKpkr1S9Rttu1oZ87IykAAwWjVlbIrToHR9Gt_jfTxQkG";
+        	$webhookurl = "";
 
 
 $timestamp = date("c", strtotime("now"));
@@ -163,7 +163,7 @@ $json_data = json_encode([
     "content" => "Um novo relatório foi enviado!",
     
     // Username
-    "username" => "Relatório Logs - SFI",
+    "username" => "Relatório Logs - Exército Alemão",
 
     // Text-to-speech
     "tts" => false,
@@ -195,7 +195,7 @@ $json_data = json_encode([
             // Footer
             "footer" => [
                 "text" => "Enviado por: ".$ofc_nickname,
-                "icon_url" => "https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif"
+                "icon_url" => "https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42014t27014s390112dbe982781f28423ae7cf5384358615b.gif"
             ],
 
             // Image to send

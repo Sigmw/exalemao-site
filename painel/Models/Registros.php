@@ -273,22 +273,22 @@ class Registros extends Model
         $sql->execute();
     }
 
-    public function addRegistro($promovido_por, $nickname, $patente, $status, $executivo, $ultima_promocao, $ofc_nickname)
+    public function addRegistro($promovido_por, $nickname, $patente, $status, $ultima_promocao, $ofc_nickname)
     {
         $data_alistamento = $ultima_promocao;
         
-        if($patente == 14) {
+        if($patente == 19) {
             $data_alistamento = '0000-00-00 00:00:00';
         }
         
-        $sql = $this->db->prepare("INSERT INTO registros (nickname, data_alistamento, ultima_promocao, promovido_por, patente_id, status_id, executivo) VALUES (:nickname, :data_alistamento, :ultima_promocao, :promovido_por, :patente, :status, :executivo)");
+        $sql = $this->db->prepare("INSERT INTO registros (nickname, data_alistamento, ultima_promocao, promovido_por, patente_id, status_id, vip_vencimento) VALUES (:nickname, :data_alistamento, :ultima_promocao, :promovido_por, :patente, :status, :data_alistamento)");
         $sql->bindValue(':nickname', $nickname);
         $sql->bindValue(':data_alistamento', $data_alistamento);
         $sql->bindValue(':ultima_promocao', $ultima_promocao);
         $sql->bindValue(':promovido_por', $promovido_por);
         $sql->bindValue(':patente', $patente);
         $sql->bindValue(':status', $status);
-         $sql->bindValue(':executivo', $executivo);
+         $sql->bindValue(':data_alistamento', $data_alistamento);
         $sql->execute();
 
         $l = new \Models\Logs();

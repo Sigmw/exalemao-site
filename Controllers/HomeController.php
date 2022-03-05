@@ -62,43 +62,10 @@ class HomeController extends Controller
 	/*
 		Configuração de Ouvidoria do site
 	*/
-	public function ouvidoria()
-	{
-
-		$this->arrayInfo['page_active'] = 'ouvidoria';
-		$this->arrayInfo['pageName'] = 'Ouvidoria';
-		$t = new Textos();
-		$this->arrayInfo['texto'] = $t->getTexto(6);
-		
-		/* Fara com que a página seja carregada */
-		$this->loadTemplate('principal/ouvidoria', $this->arrayInfo);
-	}
+	
 
 	/*
 		Configuração de Melhores da Semana do site
 	*/
-	public function melhores_da_semana()
-	{
-		$id_registro = 0;
 
-		if ($this->acesso->isLogged()) {
-			$id_registro = $this->acesso->getInfo('id_registro');
-		}
-
-		$this->arrayInfo['page_active'] = 'melhores_da_semana';
-		$this->arrayInfo['pageName'] = 'Melhores da Semana';
-
-		$r = new Ranking();
-		$this->arrayInfo['treinos'] = $r->getRanking(1, $id_registro);
-		$this->arrayInfo['des'] = $r->getRanking(2, $id_registro);
-		$this->arrayInfo['atendimentos'] = $r->getRanking(6, $id_registro);
-		$this->arrayInfo['executivos'] = $r->getRanking(7, $id_registro);
-		$this->arrayInfo['gerais'] = $r->getRanking(5);
-
-		$this->arrayInfo['meugeral'] = $r->getRankingById(5, $id_registro);
-
-		
-		/* Fara com que a página seja carregada */
-		$this->loadView('principal/melhores_da_semana', $this->arrayInfo);
-	}
 }

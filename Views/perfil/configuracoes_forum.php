@@ -82,7 +82,6 @@
                 <ul>
                     <li><a href="<?php echo BASE; ?>profile/<?php echo $acesso->getInfo('nickname'); ?>">Meu Perfil</a></li>
                     <li><a href="<?php echo BASE; ?>perfil/configuracoes" class="active">Configurações</a></li>
-                    <li class="active"><a href="<?php echo BASE; ?>perfil/configuracoes-forum">Fórum</a></li>
                     <li><a href="<?php echo BASE; ?>perfil/configuracoes-perfil">Configurações do Perfil</a></li>
                 </ul>
             </div>

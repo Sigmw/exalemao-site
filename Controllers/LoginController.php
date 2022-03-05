@@ -70,7 +70,7 @@ class LoginController extends Controller
 			}
 
 			if (count($existe) == 0) {
-				$_SESSION['aviso_registro'] = 'O nickname informado não é um(a) membro(a) do SFI!';
+				$_SESSION['aviso_registro'] = 'O nickname informado não é um(a) membro(a) do Exército Alemão!';
 			}
 
 			if (!$a->temCadastro($existe['id'])) {
@@ -103,7 +103,7 @@ class LoginController extends Controller
 			}
 
 			if (count($existe) == 0) {
-				$_SESSION['aviso_registro'] = 'O nickname informado não é um(a) membro(a) do SFI!';
+				$_SESSION['aviso_registro'] = 'O nickname informado não é um(a) membro(a) do Exército Alemão!';
 			}
 
 		} else {
@@ -198,11 +198,11 @@ class LoginController extends Controller
 			}
 
 			if (count($existe) == 0) {
-				$_SESSION['aviso_registro'] = 'O nickname informado não é um(a) membro(a) da SFI!';
+				$_SESSION['aviso_registro'] = 'O nickname informado não é um(a) membro(a) da Exército Alemão!';
 			}
 
 			if (count($existe) > 0 && !$acesso->temCadastro($existe['id'])) {
-				$_SESSION['aviso_registro'] = 'O nickname informado ainda não se cadastrou no site da SFI!';
+				$_SESSION['aviso_registro'] = 'O nickname informado ainda não se cadastrou no site do Exército Alemão!';
 			}
 
 			if ($senha1 !== $senha2) {

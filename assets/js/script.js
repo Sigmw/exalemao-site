@@ -7,21 +7,7 @@ script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
 script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
-$radio = c('.radio')
-const Radio = {
-	r:c('#radio_player'),
-	play() {
-		this.r.play()
-	},
-	pause() {
-		this.r.pause()
-		localStorage.volumeRadio = 0
-	},
-	volume(value) {
-		this.r.volume = value
-		this.play()
-	}
-}
+
 
 const ForumMsgs = {
     page: 2,
@@ -166,7 +152,7 @@ function curtirComentarioN(id_comentario, id_registro, tipo, id_noticia) {
 
 function getRegistro() {
 	let nickname = c('#busca-registro form #nickname').value;
-	if(nickname == "SFI") {
+	if(nickname == "Yuri-Takahashi") {
 	document.body.classList.add("treme");
 
 
@@ -175,12 +161,12 @@ setTimeout(function(){ document.body.classList.remove("treme"); }, 3000);
 
 
 	}
-	else if (nickname == "Ruddock") {
+	else if (nickname == "Glayve") {
 	  document.body.classList.add("treme");
 	  setTimeout(function(){ document.body.classList.remove("treme"); }, 3000);
 
 	}
-	else if(nickname == "Fabbri") {
+	else if(nickname == "Amaral") {
 	    document.body.classList.add("treme");
 	    setTimeout(function(){ document.body.classList.remove("treme"); }, 3000);
 
@@ -373,27 +359,7 @@ if($rangeInput) {
 	});
 }
 
-if ($radio) {
-	if(localStorage.volumeRadio) {
-		$rangeInput.value = localStorage.volumeRadio;
-	} else {
-		$rangeInput.value = 50
-	}
 
-	sheet.textContent = getTrackStyle($rangeInput);
-
-	c('#radio-pesquisa .radio .botoes button:nth-child(1)').addEventListener('click', () => {
-		if(localStorage.volumeRadio && localStorage.volumeRadio == "0") {
-			$rangeInput.value = 30;
-		}
-		sheet.textContent = getTrackStyle($rangeInput);
-	})
-	c('#radio-pesquisa .radio .botoes button:nth-child(2)').addEventListener('click', () => {
-		Radio.pause()
-		$rangeInput.value = localStorage.volumeRadio;
-		sheet.textContent = getTrackStyle($rangeInput);
-	})
-}
 
 $(document).ready(function(){
 	$('.tooltipped').tooltip();

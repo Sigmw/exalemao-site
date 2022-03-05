@@ -32,7 +32,7 @@ class MAmigos extends Model
 
     private function getAmigoTipo($id_registro, $tipo)
     {
-        $retorno = 'SFI';
+        $retorno = 'Yuri-Takahashi';
 
         $sql = $this->db->prepare("SELECT *, (select registros.nickname from registros where registros.id = melhores_amigos.id_amigo) as nickname FROM melhores_amigos WHERE id_de = :id_registro AND tipo = :tipo LIMIT 1");
         $sql->bindValue(':id_registro', $id_registro);

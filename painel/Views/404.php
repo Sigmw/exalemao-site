@@ -7,15 +7,15 @@
     <title>Página não encontrada - Serviço Federal de Inteligência</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-   <link rel="apple-touch-icon" href="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif">
-    <link rel="shortcut icon" href="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif">
+    <link rel="apple-touch-icon" href="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif">
+    <link rel="shortcut icon" href="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif">
 
     <style>
         @font-face {
             font-family: 'Eurostile';
             font-style: normal;
             font-weight: normal;
-            src: local('Eurostile'), url('http://sihb.site/assets/css/eurostile.woff') format('woff');
+            src: local('Eurostile'), url('http://192.168.18.17/assets/css/eurostile.woff') format('woff');
         }
 
 
@@ -23,7 +23,7 @@
             font-family: 'EuroStyle Normal';
             font-style: normal;
             font-weight: normal;
-            src: local('EuroStyle Normal'), url('http://sihb.site/assets/css/EuroStyle Normal.woff') format('woff');
+            src: local('EuroStyle Normal'), url('http://192.168.18.17/assets/css/EuroStyle Normal.woff') format('woff');
         }
 
         :root {
@@ -40,11 +40,10 @@
         }
 
         body {
-            background: red;
-            background: -moz-linear-gradient(90deg, var(--black) 0%, var(--black-darken-2) 80%);
-            background: -webkit-linear-gradient(90deg, var(--black) 0%, var(--black-darken-2) 80%);
-            background: linear-gradient(90deg, darkblue 0%, black 80%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--black), endColorstr=var(--black-darken-2), GradientType=1);
+           background: #660000;
+            background: -webkit-gradient(linear, left top, right top, from(#660000), color-stop(80%, #660000));
+            background: linear-gradient(90deg, #660000 0%, #330000 80%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#000, endColorstr=#1f1e1f, GradientType=1);
             height: 100vh;
             color: #fff;
             display: flex;
@@ -65,7 +64,7 @@
         }
 
         h1 {
-            color: var(--yellow);
+            color: #ffcc00;
             font-weight: bold;
             font-size: 35px;
         }
@@ -108,10 +107,11 @@
         </div>
     </div>
 
- 
+
 
     <script>
         const BASE = '../';
+
         function startTimer(duration, display) {
             var timer = duration,
                 minutes, seconds;
@@ -130,7 +130,7 @@
             var fiveMinutes = 5,
                 display = document.querySelector('#segundos');
             startTimer(fiveMinutes, display);
-        }; 
+        };
     </script>
 </body>
 

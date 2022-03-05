@@ -16,27 +16,20 @@
     <div class="card-body">
         <h5>Escolha um tipo de relatório</h5>
         <form onchange="return buscarTipoTreino(this)" id="opcoes-tipo">
-            <label class="custom-control custom-radio">
-                <input type="radio" name="radio-stacked" class="custom-control-input" value="1" checked=""><span class="custom-control-label">Relatório Atendimento</span>
-            </label>
 
-            <?php if ($acesso->getInfo('patente') <= 16) : ?>
+            <?php if ($acesso->getInfo('patente') <= 18) : ?>
                 <label class="custom-control custom-radio">
-                    <input type="radio" name="radio-stacked" class="custom-control-input" value="2"><span class="custom-control-label">Relatório Ronda/Efeito</span>
+                    <input type="radio" name="radio-stacked" class="custom-control-input" value="2"><span class="custom-control-label">Relatório Patrulha</span>
                 </label>
             <?php endif; ?>
-
+            <!--
             <?php if ($acesso->getInfo('patente') <= 14) : ?>
                 <label class="custom-control custom-radio">
                     <input type="radio" name="radio-stacked" class="custom-control-input" value="4"><span class="custom-control-label">Relatório Treinamento</span>
                 </label>
             <?php endif; ?>
+            -->
 
-            <?php if ($acesso->isExterno(1, $acesso->getInfo('id_registro'))) : ?>
-                <label class="custom-control custom-radio">
-                    <input type="radio" name="radio-stacked" class="custom-control-input" value="5"><span class="custom-control-label">Relatório Ajudantes</span>
-                </label>
-            <?php endif; ?>
 
             <?php if ($acesso->isExterno(4, $acesso->getInfo('id_registro'))) : ?>
                 <!--<label class="custom-control custom-radio">
@@ -44,11 +37,6 @@
                 </label> -->
             <?php endif; ?>
 
-            <?php if ($acesso->isExterno(5, $acesso->getInfo('id_registro'))) : ?>
-                <label class="custom-control custom-radio">
-                    <input type="radio" name="radio-stacked" class="custom-control-input" value="10"><span class="custom-control-label">Relatório Entretenimento</span>
-                </label>
-            <?php endif; ?>
 
             <?php if ($acesso->isExterno(6, $acesso->getInfo('id_registro'))) : ?>
                <!-- <label class="custom-control custom-radio">

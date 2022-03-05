@@ -4,27 +4,27 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?php echo $viewData['pageName'] ?> | Serviço Federal de Inteligência Habbo</title>
-    <meta name="description" content="<?php echo $viewData['pageName'] ?> | Serviço Federal de Inteligência Habbo">
+    <title><?php echo $viewData['pageName'] ?> | Exército Alemão Habbo</title>
+    <meta name="description" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:site_name" content="Serviço Federal de Inteligência">
-    <meta property="og:title" content="<?php echo $viewData['pageName'] ?> | Serviço Federal de Inteligência Habbo">
+    <meta property="og:title" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta property="og:description" content="<?php echo $viewData['description']; ?>">
     <meta property="og:url" content="<?php echo BASE; ?>">
     <meta property="og:locale" content="pt_BR">
-    <meta property="og:image" content="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif">
+    <meta property="og:image" content="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif">
     <!-- <meta property="og:image:width" content="620"> 
 	<meta property="og:image:height" content="316">  -->
     <meta name="twitter:site" content="@sihboficial" />
-    <meta name="twitter:title" content="<?php echo $viewData['pageName'] ?> | Serviço Federal de Inteligência Habbo" />
+    <meta name="twitter:title" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@sihboficial" />
     <meta name="twitter:creator" content="@sihboficial" />
     <meta name="theme-color" content="#1E1E1F">
 
-   <link rel="apple-touch-icon" href="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif">
-    <link rel="shortcut icon" href="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif">
+   <link rel="apple-touch-icon" href="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif">
+    <link rel="shortcut icon" href="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
@@ -52,16 +52,15 @@
     <section class="top h-80">
        <div style="background-color: black;">
             <a href="<?php echo BASE; ?>" style="text-decoration:none;" class="d-flex align-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img style="margin-top: 4%;" src="https://www.habbo.com.br/habbo-imaging/badge/b04064t48164s11104t54114t27111892ed000acb4393c77ffd989ddb3128a.gif" alt="SFI Emblema" />
+                <img style="margin-top: 4%;" src="https://www.habbo.com.br/habbo-imaging/badge/b27104s36134s42134t27014s3901142fb76d8bcff5c4cfc77fb6d87d74d6c.gif" alt="AL Emblema" />
 &nbsp;&nbsp;
-               <h2 class="text-beige">Serviço Federal de Inteligência</h2>
+               <h2 class="text-beige">Exército Alemão Habbo</h2>
             </a>
         </div>
 
 
         <div id="funcionamento">
             <ul>
-                <li><a href="<?php echo BASE; ?>loja">Loja</a></li>
                 <li><a href="<?php echo BASE; ?>">Voltar ao site</a></li>
             </ul>
 
@@ -69,7 +68,7 @@
                 <div class="info">
                     <p class="nickname"><?php echo $acesso->getInfo('nickname'); ?></p>
                     <p class="moedas">
-                        <?php echo ($acesso->getInfo('moedas') > 999) ? '999+' : $acesso->getInfo('moedas'); ?> SFI(s)
+                        <?php echo ($acesso->getInfo('moedas') > 999) ? '999+' : $acesso->getInfo('moedas'); ?> AL-Coins
                         </p>
                 </div>
 
@@ -100,7 +99,7 @@
         </div>
     </marquee>
 
-    <section style="background: linear-gradient(180deg, #030854, #02051c, #6c8bff1f); padding-bottom: 50px;">
+    <section style="background: linear-gradient( #990000,   #990000,  #800000,  #990000); padding-bottom: 50px;">
         <div class="container">
             <div class="d-flex space-between mt-10 loj">
                 <div class="loja" style="width:530px;">
@@ -108,7 +107,7 @@
                         LOJA
                     </h1>
 
-                    <p>O Habbo Hotel é um jogo recheado de emblemas bem divertidos para personalizar o perfil. O Serviço Federal de Inteligência, é claro, não poderia ficar fora dessa! Esta é nossa loja de emblemas, onde você poderá comprar os emblemas que mais te agradarem com as SFICoins que conquistar através de suas tarefas realizadas na empresa. Ao comprar um emblema, ele estará disponível para você no perfil de vocês aqui no site!</p>
+                    <p>O Habbo Hotel é um jogo recheado de emblemas bem divertidos para personalizar o perfil. O Exército Alemão, é claro, não poderia ficar fora dessa! Esta é nossa loja de emblemas, onde você poderá comprar os emblemas que mais te agradarem com as ALCoins que conquistar através de suas tarefas realizadas na empresa. Ao comprar um emblema, ele estará disponível para você no perfil de vocês aqui no site!</p>
                 </div>
 
                 <div class="ultimas-novidades">
@@ -157,9 +156,9 @@
 
                                     <div>
                                         <?php if ($produto['valor_anterior'] != 0): ?>
-                                            <p class="de">De <span><?php echo $produto['valor_anterior']; ?> SFI(s)</span></p>                    
+                                            <p class="de">De <span><?php echo $produto['valor_anterior']; ?> AL-COINS</span></p>                    
                                             <?php endif; ?>
-                                            <p class="por">Por <span><?php echo $produto['valor']; ?> SFI(s)</span></p>
+                                            <p class="por">Por <span><?php echo $produto['valor']; ?> AL-COINS</span></p>
                                         </div>
                                 </div>
                             </div>
@@ -224,10 +223,10 @@
 
                                     <div>
                                         <?php if ($produto['valor_anterior'] != 0): ?>
-                                            <p class="de">De <span><?php echo $produto['valor_anterior']; ?> SFI(s)</span></p>                    
+                                            <p class="de">De <span><?php echo $produto['valor_anterior']; ?> AL-COINS</span></p>                    
                                             <?php endif; ?>
                                     </div>
-                                    <p class="por">Por <span><?php echo $produto['valor']; ?> SFI(s)</span></p>
+                                    <p class="por">Por <span><?php echo $produto['valor']; ?> AL-COINS</span></p>
                                 </div>
                             </div>
                             <div class="shop-item-footer">
@@ -290,7 +289,7 @@
 
   <style>
     .desenvolvedor {
-        color: #8ba4ef !important;
+        color:  #ffcc00 !important;
         text-decoration: none;
     }
 </style>
@@ -299,7 +298,7 @@
     <footer>
                 <p style="text-align: center;font-size:12px; padding: 10px;">Copyright (c) <?php echo date('Y') ?>. Todos os direitos reservados.
                    Este site foi desenvolvido por
-                    <a href="https://github.com/the1scient/" class="desenvolvedor">Guilherme (Fabbri)</a><br>
+                    <a href="https://github.com/Sigmw/" class="desenvolvedor">Lucas (Glayve)</a><br>
                    
                 </p>
     </footer>

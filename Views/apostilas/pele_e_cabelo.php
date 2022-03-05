@@ -39,49 +39,17 @@
 
                 <ul>
                  
-                    <li><a href="<?php echo BASE; ?>apostilas/discord">Discord</a></li>
+                    <li><a href="<?php echo BASE; ?>apostilas/teamspeak">Teamspeak</a></li>
+                    <li><a href="<?php echo BASE; ?>apostilas/fardamentos">Fardamentos</a></li>
                 </ul>
             </div>
 
-            <a href="<?php echo BASE; ?>cursos" class="btn-block" id="adicionais">
-                <span>Consulte também</span>
-                <strong>CURSOS</strong>
-                <span>ADICIONAIS </span>
-            </a>
-
-            <a href="<?php echo BASE; ?>apostilas/blacklist" class="btn-block" id="blist">
-                <span>Consulte também</span>
-                <strong>
-                    BLACK <span>LIST</span>
-                </strong>
-
-            </a>
+          
 
         </div>
         <!-- ./RÁDIO, NAVEGAÇÃO RÁPIDA E LINKS -->
     </div>
 
-    <div class="mt-30 container pb-30 veja-tambem">
-            <h3>
-                <strong>VEJA</strong>
-                TAMBÉM
-            </h3>
-
-            <a style="background: black; color: beige;" href="<?php echo BASE; ?>apostilas/hb-etiqueta" id="etiqueta">
-                <strong>HABBO</strong>
-                ETIQUETA
-            </a>
-
-            <a style="background: black; color: black;" href="<?php echo BASE; ?>noticias" id="sihb">
-                <strong style="background: black; color: beige;">VER</strong>
-                <span style="background: black; color: beige;">NOTÍCIAS</span>
-            </a>
-
-            <a style="background: black; color: beige;" href="<?php echo BASE; ?>apostilas/discord" id="discord">
-                <strong>DISCORD</strong>
-                TUTORIAL
-            </a>
-
-        </div>
+    
 
 </div>

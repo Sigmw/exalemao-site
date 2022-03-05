@@ -9,7 +9,7 @@
                 <a href="<?php echo BASE; ?>apostilas/discord" class="last">Teamspeak</a>
             </div>
 
-            <h2 class="titulo">Discord</h2>
+            <h2 class="titulo">Teamspeak</h2>
 
             <div style="padding:13px;font-size:13px;"><?php echo $texto['texto']; ?></div>
         </div>
@@ -37,56 +37,17 @@
             <div class="relacionadas mt-10">
                 <h4>PÁGINAS RELACIONADAS</h4>
 
-                <ul> <!--
-                    <li><a href="<?php echo BASE; ?>apostilas/treinamento-de-estagiarios">Treinamento de Estagiários</a></li>
-                    <li><a href="<?php echo BASE; ?>apostilas/treinamento-de-agentes">Treinamento de Agentes</a></li>
-                    <li><a href="<?php echo BASE; ?>apostilas/treinamento-de-agentes-especiais">Treinamento de Agentes Especiais</a></li>
-                    <li><a href="<?php echo BASE; ?>apostilas/treinamento-de-agentes-seniores">Treinamento de Agentes Seniores</a></li>
+                <ul> 
+                    <li><a href="<?php echo BASE; ?>apostilas/fardamentos">Fardamentos</a></li>
                     <li><a href="<?php echo BASE; ?>apostilas/pele-e-cabelo">Pele e Cabelo</a></li>
-                    <li><a href="<?php echo BASE; ?>apostilas/areas-da-sede">Áreas da Sede</a></li>
-                    <li><a href="<?php echo BASE; ?>apostilas/discord">Discord</a></li> -->
+                   <!-- <li><a href="<?php echo BASE; ?>apostilas/teamspeak">Teamspeak</a></li> -->
                 </ul>
             </div>
 
-            <a href="<?php echo BASE; ?>cursos" class="btn-block" id="adicionais">
-                <span>Consulte também</span>
-                <strong>CURSOS</strong>
-                <span>ADICIONAIS </span>
-            </a>
-
-            <a href="<?php echo BASE; ?>apostilas/blacklist" class="btn-block" id="blist">
-                <span>Consulte também</span>
-                <strong>
-                    BLACK <span>LIST</span>
-                </strong>
-
-            </a>
 
         </div>
         <!-- ./RÁDIO, NAVEGAÇÃO RÁPIDA E LINKS -->
     </div>
 
-    <div class="mt-30 container pb-30 veja-tambem">
-            <h3 style="color: white;">
-                <strong>VEJA</strong>
-                TAMBÉM
-            </h3>
-
-            <a style="background: black; color: beige;" href="<?php echo BASE; ?>apostilas/hb-etiqueta" id="etiqueta">
-                <strong>HABBO</strong>
-                ETIQUETA
-            </a>
-
-            <a style="background: black; color: black;" href="<?php echo BASE; ?>noticias" id="sihb">
-                <strong style="background: black; color: beige;">VER</strong>
-                <span style="background: black; color: beige;">NOTÍCIAS</span>
-            </a>
-
-            <a style="background: black; color: beige;" href="<?php echo BASE; ?>apostilas/discord" id="discord">
-                <strong>DISCORD</strong>
-                TUTORIAL
-            </a>
-
-        </div>
-
+   
 </div>

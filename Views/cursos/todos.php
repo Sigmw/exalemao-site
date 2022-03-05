@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?php echo $viewData['pageName'] ?> | Serviço de Inteligência Habbiano</title>
-    <meta name="description" content="<?php echo $viewData['pageName'] ?> | Serviço Federal de Inteligência">
+    <title><?php echo $viewData['pageName'] ?> | Exército Alemão Habbo</title>
+    <meta name="description" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:site_name" content="Serviço Federal de Inteligência - Habbo">
-    <meta property="og:title" content="<?php echo $viewData['pageName'] ?> | Serviço Federal de Inteligência">
+    <meta property="og:site_name" content="Exército Alemão Habbo - Habbo">
+    <meta property="og:title" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta property="og:description" content="<?php echo $viewData['description']; ?>">
     <meta property="og:url" content="<?php echo BASE; ?>">
     <meta property="og:locale" content="pt_BR">

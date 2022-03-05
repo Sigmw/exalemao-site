@@ -9,7 +9,7 @@
                 <a href="<?php echo BASE; ?>sobre/registros" class="last">Registros</a>
             </div>
 
-            <h2 class="titulo">Registros do Serviço Federal de Inteligência</h2>
+            <h2 class="titulo">Registros do Exército Alemão</h2>
 
             <div style="padding:13px;font-size:13px;"><?php 
            echo "a";
@@ -65,28 +65,5 @@
         </div>
         <!-- ./RÁDIO, NAVEGAÇÃO RÁPIDA E LINKS -->
     </div>
-
-    <div class="mt-30 container pb-30 veja-tambem">
-            <h3>
-                <strong>VEJA</strong>
-                TAMBÉM
-            </h3>
-
-            <a style="background: black; color: beige;" href="<?php echo BASE; ?>apostilas/hb-etiqueta" id="etiqueta">
-                <strong>HABBO</strong>
-                ETIQUETA
-            </a>
-
-            <a style="background: black; color: black;" href="<?php echo BASE; ?>noticias" id="sihb">
-                <strong style="background: black; color: beige;">VER</strong>
-                <span style="background: black; color: beige;">NOTÍCIAS</span>
-            </a>
-
-            <a style="background: black; color: beige;" href="<?php echo BASE; ?>apostilas/discord" id="discord">
-                <strong>DISCORD</strong>
-                TUTORIAL
-            </a>
-
-        </div>
 
 </div>

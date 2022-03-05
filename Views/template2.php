@@ -26,7 +26,7 @@ h1.wiggle:hover {
     <title><?php echo $viewData['pageName'] ?> | Exército Alemão Habbo</title>
     <meta name="description" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta property="og:site_name" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta property="og:title" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta property="og:description" content="<?php echo $viewData['description']; ?>">
@@ -153,7 +153,7 @@ h1.wiggle:hover {
                     
                 </ul>
             </li>
-            
+            <!--
                    <?php if ($viewData['acesso']->isLogged()): ?>
              <li class="nav-item <?php echo ($viewData['page_active'] == 'treinamentos') ? 'active' : ''; ?> dropdown">
                 <a href="javascript:;" class="nav-link">Treinamentos</a>
@@ -180,16 +180,9 @@ h1.wiggle:hover {
                 </ul>
             </li>
             <?php endif; ?>
+                     -->
             
             
-            <li class="nav-item <?php echo ($viewData['page_active'] == 'financeiro') ? 'active' : ''; ?> dropdown">
-                <a href="javascript:;" class="nav-link">Financeiro</a>
-                <ul>
-                    <li><a href="<?php echo BASE; ?>financeiro/cargos_pagos">Cargos Pagos</a></li>
-                    <li><a href="<?php echo BASE; ?>financeiro/salarios">Salários</a></li>
-                    <li><a href="<?php echo BASE; ?>financeiro/sistema-de-indicacao">Sistema de Indicações</a></li>
-                </ul>
-            </li>
 
           <!--  <li class="nav-item <?php echo ($viewData['page_active'] == 'grupos') ? 'active' : ''; ?> dropdown">
                 <a href="javascript:;" class="nav-link">Grupos</a>
@@ -252,6 +245,7 @@ h1.wiggle:hover {
                     
                 </ul>
             </li>
+            <!--
              <?php if ($viewData['acesso']->isLogged()): ?>
              <li class="nav-item <?php echo ($viewData['page_active'] == 'treinamentos') ? 'active' : ''; ?> dropdown">
                 <a href="javascript:;" class="nav-link">Treinamentos</a>
@@ -277,7 +271,7 @@ h1.wiggle:hover {
                 </ul>
             </li>
             <?php endif; ?>
-
+                     -->
             
         
        <!--     <li class="nav-item <?php echo ($viewData['page_active'] == 'grupos') ? 'active' : ''; ?> dropdown">

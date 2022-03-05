@@ -241,16 +241,16 @@ class Uteis extends Model {
         } elseif ($nivel >= 51 && $nivel <= 75) {
             
             if ($sexo == 0) {
-                $msg = 'Você já pensou em ser Presidente do SFI, meu/minha amigo(a)? Desse jeito ninguém te segura!';
+                $msg = 'Você já pensou em ser General do Exército Alemão, meu/minha amigo(a)? Desse jeito ninguém te segura!';
             } elseif ($sexo == 1) {
-                $msg = 'Você já pensou em ser Presidente do SFI, meu amigo? Desse jeito ninguém te segura!';
+                $msg = 'Você já pensou em ser General do Exército Alemão, meu amigo? Desse jeito ninguém te segura!';
             } elseif ($sexo == 2) {
-                $msg = 'Você já pensou em ser Presidente do SFI, minha amiga? Desse jeito ninguém te segura!';
+                $msg = 'Você já pensou em ser General do Exército Alemão, minha amiga? Desse jeito ninguém te segura!';
             }
             
         } elseif ($nivel >= 76 && $nivel <= 100) {
             
-            $msg = 'Que trabalho impecável é esse?! Desse jeito até o Presidente fica com medo de perder o cargo pra você!';
+            $msg = 'Que trabalho impecável é esse?! Desse jeito até o General fica com medo de perder o cargo pra você!';
             
         }
 

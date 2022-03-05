@@ -7,7 +7,7 @@
     <title><?php echo $viewData['pageName'] ?> | Exército Alemão Habbo</title>
     <meta name="description" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta property="og:site_name" content="Diário Brasileiro - Anonimo">
     <meta property="og:title" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta property="og:description" content="<?php echo $viewData['description']; ?>">
@@ -17,7 +17,7 @@
     <!-- <meta property="og:image:width" content="620"> 
 	<meta property="og:image:height" content="316">  -->
     <meta name="twitter:site" content="@exalemaohb" />
-    <meta name="twitter:title" content="<?php echo $viewData['pageName'] ?> | Serviço de Inteligência Habbiano" />
+    <meta name="twitter:title" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@exalemaohb" />
     <meta name="twitter:creator" content="@exalemaohb" />
@@ -370,156 +370,8 @@
                         </div>
 
                         <div class="advs d-flex align-center" style="width:250px;flex-direction: column;">
-                            <div id="advs">
-                                <?php for ($i=1; $i <= 3; $i++): ?>
-                                    <div class="adv <?php echo($i <= $usuario['advs'])?'tem':''; ?>"></div>
-                                <?php endfor; ?>
-                            </div>
-                            <p style="color: #FAE094;">
-                                <?php echo($usuario['advs'] >= 10)?$usuario['advs']:'0'.$usuario['advs']; ?> advertência(s) 
-                            </p>
+
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="amigos-estatisticas-confianca" style="background: #000; box-shadow: 1px 2px 5px #333;">
-                <div class="amigos" style="background: #000;">
-                    <h1 style="color: #FAE094; background: #000;">
-                        <i class="far fa-heart"></i>
-                        Melhores Amigos
-                    </h1>
-
-                    <div id="amigos" class="<?php echo($usuario['vip'] == 1)?'':'nao-vip'; ?>">
-                        <div class="amigo coracao">
-                            <p><?php echo($usuario['vip'] == 1)?$amigos['coracao']:'Yuri-Takahashi'; ?></p>
-                            <img src="http://www.habbo.com.br/habbo-imaging/avatarimage?&user=<?php echo($usuario['vip'] == 1)?$amigos['coracao']:'Yuri-Takahashi'; ?>&action=std&direction=4&head_direction=4&img_format=png&gesture=std&headonly=1&size=b" alt="Head habbo">
-                        </div>
-
-                        <div class="amigo feliz">
-                            <p><?php echo($usuario['vip'] == 1)?$amigos['feliz']:'Yuri-Takahashi'; ?></p>
-                            <img src="http://www.habbo.com.br/habbo-imaging/avatarimage?&user=<?php echo($usuario['vip'] == 1)?$amigos['feliz']:'Yuri-Takahashi'; ?>&action=std&direction=4&head_direction=4&img_format=png&gesture=std&headonly=1&size=b" alt="Head habbo">
-                        </div>
-
-                        <div class="amigo money">
-                            <p><?php echo($usuario['vip'] == 1)?$amigos['money']:'Yuri-Takahashi'; ?></p>
-                            <img src="http://www.habbo.com.br/habbo-imaging/avatarimage?&user=<?php echo($usuario['vip'] == 1)?$amigos['money']:'Yuri-Takahashi'; ?>&action=std&direction=4&head_direction=4&img_format=png&gesture=std&headonly=1&size=b" alt="Head habbo">
-                        </div>
-                        
-                        <?php if ($usuario['vip'] != 1): ?>
-                            <div id="nao-vip">
-                                <img src="https://i.imgur.com/KnXrW3T.png" alt="Cadeado" class="mr-10" >
-                                <p>SOMENTE<br/> MEMBROS VIP</p>
-                            </div>
-                        <?php endif; ?>
-                    </div>
-                </div>
-
-                <div class="estatisticas" style="background: #000;">
-                    <h1 style="color: #FAE094; background: #000;">
-                        <i class="fas fa-chart-bar"></i>
-                        Estatísticas
-                    </h1>
-
-                    <div id="estatisticas" class="<?php echo($usuario['vip'] == 1)?'':'nao-vip'; ?>">
-                        <div class="estatic">
-                            <div class="chart-total">
-                                <canvas id="treinosChart" width="100" height="100"></canvas>
-                                <div class="chart-total-legend" style="width: 40px;height: 40px;line-height: 40px;">
-                                    <span class="legend-val" style="font-size: 25px;font-weight: 900;color: #FAE094;">
-                                        <span style="color: #FAE094;">
-                                            <?php if ($usuario['vip'] == 1): ?>
-                                                <?php
-                                                    $total = $treinos + $des + $atendimentos;
-                                                    if ($usuario['patente_id'] <= 6) {
-                                                        $total += $executivos;
-                                                    }
-
-                                                    echo $total;
-                                                ?>
-                                            <?php else: ?>
-                                                160
-                                            <?php endif; ?>
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="legendas">
-                                <p class="total" style="color: #fff;">
-                                    <?php if ($usuario['vip'] == 1): ?>
-                                        <?php
-                                            $total = $treinos + $des + $atendimentos;
-                                            if ($usuario['patente_id'] <= 6) {
-                                                $total += $executivos;
-                                            }
-
-                                            echo $total." totais";
-                                        ?>
-                                    <?php else: ?>
-                                        306
-                                    <?php endif; ?>
-                                </p>
-
-                                <p style="color: #fff;">
-                                    <span class="aplicados"><?php echo $treinos; ?></span> treinamentos aplicados
-                                </p>
-
-                                <p style="color: #fff;">
-                                    <span class="recebidos"><?php echo $des; ?></span> DEs feitas
-                                </p>
-
-                                <p style="color: #fff;">
-                                    <span class="auxiliados"><?php echo $atendimentos; ?></span> atendimentos realizados
-                                </p>
-                                
-                                <p style="color: #fff;">
-                                    <span class="helper"><?php echo $helpers; ?></span> ações como Helper
-                                </p>
-
-                                <?php if ($usuario['patente_id'] <= 6): ?>
-                                    <p style="color: #fff;">
-                                        <span class="supervisor"><?php echo $executivos; ?></span> ações como Executivo
-                                    </p>
-                                <?php endif; ?>
-
-                                
-
-                            </div>
-                        </div>
-                        <?php if ($usuario['vip'] != 1): ?>
-                            <div id="nao-vip">
-                                <img src="https://i.imgur.com/KnXrW3T.png" alt="Cadeado" class="mr-10" >
-                                <p>SOMENTE<br/> MEMBROS VIP</p>
-                            </div>
-                        <?php endif; ?>
-                    </div>
-                </div>
-
-                <div class="confianca" style="background: #000; box-shadow: 1px 2px 5px #333;">
-                    <h1 style="background: #000; color: #FAE094;">
-                        Nível de confiança da administração
-                    </h1>
-
-                    <div id="confianca" class="<?php echo($usuario['vip'] == 1)?'':'nao-vip'; ?>">
-                        <p class="n" style="padding-left:<?php echo($usuario['vip'] == 1)?($usuario['confianca']-20):'83'; ?>%;">
-                            <?php echo($usuario['vip'] == 1)?$usuario['confianca']:'83'; ?>%
-                        </p>
-
-                        <div class="nivel" style="background:linear-gradient(90deg, rgba(217,0,0,1) 0%, rgba(255,128,0,1) 26%, rgba(255,255,0,1) 59%, rgba(0,217,0,1) <?php echo($usuario['vip'] == 1)?'100':'83'; ?>%);padding-left:<?php echo($usuario['vip'] == 1)?($usuario['confianca']-8):'83'; ?>%;background-size: <?php echo($usuario['vip'] == 1)?($usuario['confianca']-5):'83'; ?>%;"><span></span></div>
-
-                        <p id="caminho">
-                            
-                        </p>
-
-                        <p id="sobre" style="color: white; font-weight: bold;"><?php echo $uteis->msgConfianca($usuario['sexo'], $usuario['confianca']); ?></p>
-                        
-                        <?php if ($usuario['vip'] != 1): ?>
-                            <div id="nao-vip">
-                                <img src="https://i.imgur.com/KnXrW3T.png" alt="Cadeado" class="mr-10" >
-                                <p>SOMENTE<br/> MEMBROS VIP</p>
-                            </div>
-                        <?php endif; ?>
                     </div>
                 </div>
             </div>

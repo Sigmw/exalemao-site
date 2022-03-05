@@ -40,7 +40,6 @@
                         </div>
                     </div>
                 </div>
-                <a href="<?php echo BASE; ?>melhores-da-semana" class="btn-block mt-10 h-91 melhores-semana"></a>
             </div>
             <div id="busca-registro" class="ml-10">
                 <div class="mt-10 d-flex space-between pl-10 pr-20">
@@ -109,9 +108,12 @@
                 </li>
 
                 <li>
-                    <a href="<?php echo BASE; ?>apostilas/uniformes">Fardamentos/Uniformes</a>
+                    <a href="<?php echo BASE; ?>apostilas/fardamentos">Fardamentos</a>
                 </li>
                     
+                <li>
+                    <a href="<?php echo BASE; ?>sobre/historia">História</a>
+                </li>
                 
                
             </ul>

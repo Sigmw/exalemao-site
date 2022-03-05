@@ -91,7 +91,7 @@ class RegistrosController extends Controller
             $nicknames = $_POST['nicksnames'];
             $cargo = intval($_POST['cargo']);
             $status = intval($_POST['status']);
-            $executivo = intval($_POST['executivo']);
+
 
             $ultima_promocao = (isset($_POST['data_ultima_promocao']) && !empty($_POST['data_ultima_promocao'])) ? addslashes($_POST['data_ultima_promocao']) : date('d/m/Y');
             $ut = explode('/', $ultima_promocao);
@@ -103,12 +103,12 @@ class RegistrosController extends Controller
                     $registro = $r->userExiste($nickname);
                     if (count($registro) > 0) {
                         if ($this->acesso->podePromover($registro['patente_id'], $this->acesso->getInfo('patente'))) {
-                            $r->atualizarRegistro($responsvel, $nickname, $cargo, $status, $executivo, $ultima_promocao, $registro['id'], $this->acesso->getInfo('nickname'));
+                            $r->atualizarRegistro($responsvel, $nickname, $cargo, $status, $ultima_promocao,$ultima_promocao, $registro['id'], $this->acesso->getInfo('nickname'));
                             $_SESSION['add_promover'] = 'Registro atualizado com sucesso!';
                             $_SESSION['add_promover_tipo'] = 'success';
                         }
                     } else {
-                        $r->addRegistro($responsvel, $nickname, $cargo, $status, $executivo, $ultima_promocao, $this->acesso->getInfo('nickname'));
+                        $r->addRegistro($responsvel, $nickname, $cargo, $status, $ultima_promocao, $this->acesso->getInfo('nickname'));
                         $_SESSION['add_promover'] = 'Registro adicionado com sucesso!';
                         $_SESSION['add_promover_tipo'] = 'success';
                     }
@@ -207,7 +207,7 @@ class RegistrosController extends Controller
             $l = new \Models\Logs();
             $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
             $l->addLog('invasao', $msg);
-            $_SESSION['edit_registro'] = 'Você está tentando acessar uma página disponível apenas para a direção.';
+            $_SESSION['edit_registro'] = 'Você está tentando acessar uma página disponível apenas para o Alto Comando.';
             $_SESSION['edit_registro_tipo'] = 'danger';
             header("Location: " . BASE . "registros");
             exit;
@@ -241,7 +241,7 @@ class RegistrosController extends Controller
             $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
             $l->addLog('invasao', $msg);
 
-            $_SESSION['edit_registro'] = 'Você está tentando acessar uma página disponível apenas para a direção.';
+            $_SESSION['edit_registro'] = 'Você está tentando acessar uma página disponível apenas para o Alto Comando.';
             $_SESSION['edit_registro_tipo'] = 'danger';
         }
 
@@ -266,7 +266,7 @@ class RegistrosController extends Controller
             $l = new \Models\Logs();
             $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
             $l->addLog('invasao', $msg);
-            $_SESSION['edit_registro'] = 'Você está tentando acessar uma página disponível apenas para a direção.';
+            $_SESSION['edit_registro'] = 'Você está tentando acessar uma página disponível apenas para o Alto Comando.';
             $_SESSION['edit_registro_tipo'] = 'danger';
             header("Location: " . BASE . "registros");
             exit;
@@ -289,7 +289,7 @@ class RegistrosController extends Controller
             $l = new \Models\Logs();
             $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
             $l->addLog('invasao', $msg);
-            $_SESSION['edit_registro'] = 'Você está tentando acessar uma página disponível apenas para a direção.';
+            $_SESSION['edit_registro'] = 'Você está tentando acessar uma página disponível apenas para o Alto Comando.';
             $_SESSION['edit_registro_tipo'] = 'danger';
             header("Location: " . BASE . "registros");
             exit;

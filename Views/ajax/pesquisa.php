@@ -45,7 +45,7 @@ $online = array(
 
     <div class="d-flex space-between" style="position:relative;">
         <div class="info ml-20">
-            <strong>Cargo: </strong> <?php
+            <strong>Patente: </strong> <?php
           
                 
                 echo $ptt = $executivo == 1 ? $registro['patente_executivo'] : $registro['patente'];

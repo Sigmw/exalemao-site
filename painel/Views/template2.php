@@ -8,7 +8,7 @@
     <title><?php echo $viewData['pageName'] ?> | Exército Alemão Habbo</title>
     <meta name="description" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta property="og:site_name" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta property="og:title" content="<?php echo $viewData['pageName'] ?> | Exército Alemão Habbo">
     <meta property="og:description" content="<?php echo $viewData['description']; ?>">
@@ -152,13 +152,6 @@
                                                 <a class="nav-link" href="<?php echo BASE; ?>registros/promover">Adicionar/Promover</a>
                                             </li>
                                             <?php if ($viewData['acesso']->getInfo('patente') <= 7) : ?>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="<?php echo BASE; ?>registros/confiancas">Confianças</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="<?php echo BASE; ?>registros/cartao">Entrada/Saída</a>
-                                                </li>
 
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="<?php echo BASE; ?>registros/destaque">Editar destaque</a>
@@ -168,9 +161,6 @@
                                                     <a class="nav-link" href="<?php echo BASE; ?>registros/logs">Logs</a>
                                                 </li>
                                             <?php endif; ?>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="<?php echo BASE; ?>registros/advs">Advertências</a>
-                                            </li>
                                         </ul>
                                     </div>
                                 </li>
@@ -203,7 +193,7 @@
                             
                             
                            
-
+<!--
                             <li class="nav-divider">
                                 Externos
                             </li>
@@ -322,7 +312,7 @@
                                     </div>
                                 </li>
                             <?php endif; ?>
-
+                            -->
                             <?php if ($viewData['acesso']->getInfo('patente') <= 7) : ?>
                                 <li class="nav-divider">
                                     Loja
@@ -337,14 +327,6 @@
 
                                             <li class="nav-item">
                                                 <a class="nav-link" href="<?php echo BASE; ?>loja/beneficios">Benefícios</a>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="<?php echo BASE; ?>loja/compras/2">Benefícios compras</a>
-                                            </li>
-
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="<?php echo BASE; ?>loja/codigos">Códigos de moedas</a>
                                             </li>
 
                                             <li class="nav-item">

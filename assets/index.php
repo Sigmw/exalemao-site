@@ -1,3 +1,3 @@
 <?php 
-header('Location: https://exalhb.com/');
+header('Location: https://192.168.18.17/');
 ?>

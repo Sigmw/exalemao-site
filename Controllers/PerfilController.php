@@ -68,27 +68,7 @@ class PerfilController extends Controller
 	/*
 		Configuração de Configurações do Fórum do site
 	*/
-	public function configuracoes_forum()
-	{
 
-		if ($this->acesso->isLogged() && $this->acesso->getInfo('confirmado') == 1) {
-			$this->arrayInfo['page_active'] = 'perfil';
-			$this->arrayInfo['pageName'] = 'Configurações do Fórum';
-
-			/* Fara com que a página seja carregada */
-			$this->loadTemplate('perfil/configuracoes_forum', $this->arrayInfo);
-		} else {
-			$l = new \Models\Logs();
-			
-            $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
-			$l->addLog('invasao', $msg);
-			
-			$_SESSION['aviso_registro'] = 'Você está tentando acessar uma página que não tem permissão.';
-			
-            header("Location: " . BASE);
-            exit;
-        }
-	}
 
 	/*
 		Configuração de Configurações do Perfil do site
@@ -209,29 +189,7 @@ class PerfilController extends Controller
         }
 	}
 
-	public function alterar_email()
-	{
-		if ($this->acesso->isLogged() && $this->acesso->getInfo('confirmado') == 1) {
-			$r = new Registros();
-			$this->arrayInfo['page_active'] = 'perfil';
-			$this->arrayInfo['pageName'] = 'Alterar E-mail';
-
-			$this->arrayInfo['registro'] = $r->getMembroByID($this->acesso->getInfo('id_registro'));
-
-			/* Fara com que a página seja carregada */
-			$this->loadTemplate('perfil/alterar_email', $this->arrayInfo);
-		} else {
-			$l = new \Models\Logs();
-			
-            $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
-			$l->addLog('invasao', $msg);
-			
-			$_SESSION['aviso_registro'] = 'Você está tentando acessar uma página que não tem permissão.';
-			
-            header("Location: " . BASE);
-            exit;
-        }
-	}
+	
 
 	public function alterar_senha()
 	{
@@ -244,101 +202,6 @@ class PerfilController extends Controller
 
 			/* Fara com que a página seja carregada */
 			$this->loadTemplate('perfil/alterar_senha', $this->arrayInfo);
-		} else {
-			$l = new \Models\Logs();
-			
-            $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
-			$l->addLog('invasao', $msg);
-			
-			$_SESSION['aviso_registro'] = 'Você está tentando acessar uma página que não tem permissão.';
-			
-            header("Location: " . BASE);
-            exit;
-        }
-	}
-
-	public function alterar_avatar()
-	{
-		if ($this->acesso->isLogged() && $this->acesso->getInfo('confirmado') == 1) {
-			$r = new Registros();
-			$this->arrayInfo['page_active'] = 'perfil';
-			$this->arrayInfo['pageName'] = 'Alterar Avatar';
-
-			$this->arrayInfo['registro'] = $r->getMembroByID($this->acesso->getInfo('id_registro'));
-
-			/* Fara com que a página seja carregada */
-			$this->loadTemplate('perfil/alterar_avatar', $this->arrayInfo);
-		} else {
-			$l = new \Models\Logs();
-			
-            $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
-			$l->addLog('invasao', $msg);
-			
-			$_SESSION['aviso_registro'] = 'Você está tentando acessar uma página que não tem permissão.';
-			
-            header("Location: " . BASE);
-            exit;
-        }
-	}
-
-	public function meus_topicos()
-	{
-		if ($this->acesso->isLogged() && $this->acesso->getInfo('confirmado') == 1) {
-			$f = new Forum();
-			$this->arrayInfo['page_active'] = 'perfil';
-			$this->arrayInfo['pageName'] = 'Meus Tópicos';
-			$this->arrayInfo['meus_topicos'] = $f->getTopicosByAutorId($this->acesso->getInfo('id_registro'));
-
-			/* Fara com que a página seja carregada */
-			$this->loadTemplate('perfil/meus_topicos', $this->arrayInfo);
-		} else {
-			$l = new \Models\Logs();
-			
-            $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
-			$l->addLog('invasao', $msg);
-			
-			$_SESSION['aviso_registro'] = 'Você está tentando acessar uma página que não tem permissão.';
-			
-            header("Location: " . BASE);
-            exit;
-        }
-	}
-
-	public function editar_descricao()
-	{
-		if ($this->acesso->isLogged() && $this->acesso->getInfo('confirmado') == 1 && $this->acesso->getInfo('vip') == 1) {
-			$r = new Registros();
-			$this->arrayInfo['page_active'] = 'perfil';
-			$this->arrayInfo['pageName'] = 'Editar Descrição';
-
-			$this->arrayInfo['registro'] = $r->getMembroByID($this->acesso->getInfo('id_registro'));
-
-			/* Fara com que a página seja carregada */
-			$this->loadTemplate('perfil/editar_descricao', $this->arrayInfo);
-		} else {
-			$l = new \Models\Logs();
-			
-            $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
-			$l->addLog('invasao', $msg);
-			
-			$_SESSION['aviso_registro'] = 'Você está tentando acessar uma página que não tem permissão.';
-			
-            header("Location: " . BASE);
-            exit;
-        }
-	}
-
-	public function gerar_moedas()
-	{
-		if ($this->acesso->isLogged() && $this->acesso->getInfo('confirmado') == 1) {
-			$r = new Registros();
-			$this->arrayInfo['page_active'] = 'perfil';
-			$this->arrayInfo['pageName'] = 'Gerar moedas';
-
-			$this->arrayInfo['registro'] = $r->getMembroByID($this->acesso->getInfo('id_registro'));
-
-			/* Fara com que a página seja carregada */
-			$this->loadTemplate('perfil/gerar_moedas', $this->arrayInfo);
 		} else {
 			$l = new \Models\Logs();
 			
@@ -374,87 +237,6 @@ class PerfilController extends Controller
             header("Location: " . BASE);
             exit;
         }
-	}
-
-	public function alterar_amigos()
-	{
-		if ($this->acesso->isLogged() && $this->acesso->getInfo('confirmado') == 1 && $this->acesso->getInfo('vip') == 1) {
-			$r = new Registros();
-			$m = new MAmigos();
-
-			$this->arrayInfo['page_active'] = 'perfil';
-			$this->arrayInfo['pageName'] = 'Alterar amigos';
-
-			$this->arrayInfo['amigos'] = $m->getAmigosDe($this->acesso->getInfo('id_registro'));
-			$this->arrayInfo['registro'] = $r->getMembroByID($this->acesso->getInfo('id_registro'));
-
-			/* Fara com que a página seja carregada */
-			$this->loadTemplate('perfil/alterar_amigos', $this->arrayInfo);
-		} else {
-			$l = new \Models\Logs();
-			
-            $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
-			$l->addLog('invasao', $msg);
-			
-			$_SESSION['aviso_registro'] = 'Você está tentando acessar uma página que não tem permissão.';
-			
-            header("Location: " . BASE);
-            exit;
-        }
-	}
-
-	public function remover_mensagens()
-	{
-		if ($this->acesso->isLogged() && $this->acesso->getInfo('confirmado') == 1) {
-			$r = new Registros();
-
-			$this->arrayInfo['page_active'] = 'perfil';
-			$this->arrayInfo['pageName'] = 'Remover mensagens';
-
-			$this->arrayInfo['mensagens'] = $r->getMensagensPerfil2($this->acesso->getInfo('id_registro'));
-
-			/* Fara com que a página seja carregada */
-			$this->loadTemplate('perfil/remover_mensagens', $this->arrayInfo);
-		} else {
-			$l = new \Models\Logs();
-			
-            $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
-			$l->addLog('invasao', $msg);
-			
-			$_SESSION['aviso_registro'] = 'Você está tentando acessar uma página que não tem permissão.';
-			
-            header("Location: " . BASE);
-            exit;
-        }
-	}
-
-	public function deletarMensagem($id_msg)
-	{
-		$r = new Registros();
-		$msg = $r->getMensagemPerfil($id_msg);
-		$_SESSION['aviso_registro'] = 'Tivemos um problema ao tentar apagar esta mensagem. Tente novamente mais tarde!';
-		if (
-			$this->acesso->isLogged() &&
-			$this->acesso->getInfo('confirmado') == 1 &&
-			is_numeric($id_msg) &&
-			count($msg) > 0 &&
-			$msg['id_registro_perfil'] == $this->acesso->getInfo('id_registro')
-		) {
-			$_SESSION['aviso_registro'] = 'Mensagem apagada com sucesso!';
-			$r->deleteMensagem($msg['id'], $this->acesso->getInfo('nickname'));
-		}
-
-		if($this->acesso->isLogged() && $this->acesso->getInfo('confirmado') != 1) {
-			$l = new \Models\Logs();
-			
-            $msg = "No dia " . date('d/m/Y') . " às [" . date('H:i') . "] o(a) " . $this->acesso->getInfo('nickname') . " tentou acessar uma página que não tinha acesso.";
-			$l->addLog('invasao', $msg);
-			
-			$_SESSION['aviso_registro'] = 'Você está tentando acessar uma página que não tem permissão.';
-        }
-
-		header("Location: " . BASE. "perfil/remover-mensagens");
-		exit;
 	}
 
 	public function alterar_nascimento()

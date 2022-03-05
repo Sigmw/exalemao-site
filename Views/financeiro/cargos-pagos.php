@@ -19,7 +19,7 @@
         <div class="radio-buttons">
             <div class="radio">
                 <div class="locucao">
-                    <p>BOTSFI <span>com</span> AnimaSFI</p>
+                    <p>BOT AL <span>com</span> AnimaAL</p>
                     <status>NO AR</status>
                 </div>
                 <div class="botoes">

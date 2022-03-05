@@ -47,7 +47,8 @@ class ApostilasController extends Controller
     /*
 		Configuração da Página Apostilas/treinamento_de_estagiarios do site
 	*/
-    public function tfpe()
+
+    /*public function tfpe()
     {
         
         $this->arrayInfo['pageName'] = 'TFPE';
@@ -55,12 +56,13 @@ class ApostilasController extends Controller
 		$this->arrayInfo['texto'] = $t->getTexto(13);
 
         /* Fara com que a página seja carregada */
-        $this->loadTemplate('apostilas/tfpe', $this->arrayInfo);
-    }
-
+      //  $this->loadTemplate('apostilas/tfpe', $this->arrayInfo);
+    //}
+    
     /*
 		Configuração da Página Apostilas/treinamento_de_agentes do site
 	*/
+   /*
     public function tfsa()
     {
         
@@ -79,18 +81,18 @@ class ApostilasController extends Controller
 		$this->arrayInfo['texto'] = $t->getTexto(14);
 
         /* Fara com que a página seja carregada */
-        if($patentepermission['patente_id'] <= 16) {
-            $this->loadTemplate('apostilas/tfsa', $this->arrayInfo);
-        }
-        else {
-             $this->loadTemplate('home', $this->arrayInfo);
-        }
-    }
+    //    if($patentepermission['patente_id'] <= 16) {
+  //          $this->loadTemplate('apostilas/tfsa', $this->arrayInfo);
+  //      }
+  //      else {
+  //      $this->loadTemplate('home', $this->arrayInfo);
+    //    }
+  ///  }
 
     /*
 		Configuração da Página Apostilas/treinamento_de_agentes_especiais do site
 	*/
-    public function tfca()
+  /*  public function tfca()
     {
           $r = new Registros();
 	        $username = $r->getUserByAcessoID($_SESSION['sihb_login']);
@@ -107,11 +109,11 @@ class ApostilasController extends Controller
              $this->loadTemplate('home', $this->arrayInfo);
         }
     }
-
+*/
     /*
 		Configuração da Página Apostilas/treinamento_de_agentes_especiais do site
 	*/
-    public function tfss()
+  /*  public function tfss()
     {
         
           $r = new Registros();
@@ -129,7 +131,7 @@ class ApostilasController extends Controller
         else {
              $this->loadTemplate('home', $this->arrayInfo);
         }
-    }
+    }*?
 
     /*
 		Configuração da Página Apostilas/Pele e Cabelo do site
@@ -151,7 +153,7 @@ class ApostilasController extends Controller
 	*/
     public function teamspeak()
     {
-        $this->arrayInfo['pageName'] = 'Discord';
+        $this->arrayInfo['pageName'] = 'Teamspeak';
 		$t = new Textos();
 		$this->arrayInfo['texto'] = $t->getTexto(19);
 
@@ -178,7 +180,7 @@ class ApostilasController extends Controller
 	*/
     public function fardamentos()
     {
-        $this->arrayInfo['pageName'] = 'Fardamentos do Serviço Federal de Inteligência';
+        $this->arrayInfo['pageName'] = 'Fardamentos do Exército Alemão';
 		$t = new Textos();
 		$this->arrayInfo['texto'] = $t->getTexto(27);
 
@@ -194,7 +196,7 @@ class ApostilasController extends Controller
     /*
 		Configuração da Página Apostilas/Requisitos da Sede do site
 	*/
-    public function tfsg()
+   /* public function tfsg()
     {
          $r = new Registros();
 	        $username = $r->getUserByAcessoID($_SESSION['sihb_login']);
@@ -210,12 +212,12 @@ class ApostilasController extends Controller
         else {
              $this->loadTemplate('home', $this->arrayInfo);
         }
-    }
+    }*/
 
     /*
 		Configuração da Página Apostilas/Combate de Fraudes Ideológicas do site
 	*/
-    public function tfte()
+    /*public function tfte()
     {
           $r = new Registros();
 	        $username = $r->getUserByAcessoID($_SESSION['sihb_login']);
@@ -231,7 +233,7 @@ class ApostilasController extends Controller
         else {
              $this->loadTemplate('home', $this->arrayInfo);
         }
-    }
+    }*/
 
     /*
 		Configuração da Página Apostilas/Instruções de Ética e Conduta do site

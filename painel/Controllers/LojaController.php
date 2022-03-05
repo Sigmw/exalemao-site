@@ -328,63 +328,15 @@ class LojaController extends Controller
     /*
 		Configuração da Página de Códigos de Coins da Loja
 	*/
-	public function codigos()
-	{
-        $l = new Loja();
-        $this->arrayInfo['pageName'] = 'Códigos de Dólares  - Loja'; 
-        $this->arrayInfo['items'] = $l->getCodigos(); 
-        /* Fara com que a página seja carregada */
-		$this->loadTemplate('loja/codigos', $this->arrayInfo);
-    }
+
+    
 
     /*
 		Configuração da Página de Adicionar Códigos na Loja
-	*/
-	public function addCodigo()
-	{
-        $l = new Loja();
-        $this->arrayInfo['pageName'] = 'Adicionar Código - Loja'; 
-        /* Fara com que a página seja carregada */
-		$this->loadTemplate('loja/addCodigo', $this->arrayInfo);
-    }
-    
+
     /*
 		Configuração da Ação de Adicionar Códigos na Loja
 	*/
-	public function addCodigoAction()
-	{
-        $l = new Loja();
-
-        $_SESSION['emblema'] = 'Código adicionado com sucesso!';
-		$_SESSION['emblema_tipo'] = 'success';
-        
-        if (
-            isset($_POST['codigo']) && !empty($_POST['codigo']) &&
-            isset($_POST['valor']) && !empty($_POST['valor']) 
-        ) {
-            $codigo = addslashes($_POST['codigo']);
-            $valor = addslashes($_POST['valor']);
-            $limite = (isset($_POST['limite']) && !empty($_POST['limite']))?addslashes($_POST['limite']):-1;
-            $expiracao = (isset($_POST['expiracao']) && !empty($_POST['expiracao']))?addslashes($_POST['expiracao']):'0000-00-00 00:00:00';
-
-            if ($expiracao != '0000-00-00 00:00:00') {
-                $ut = explode('/', $expiracao);
-                $u = $ut[2].'-'.$ut[1].'-'.$ut[0];
-                $expiracao = $u.' '.date('H:i:s');
-            }
-
-            $is_limited = ($limite >= 0)?0:1;
-
-            $l->addCodigo($codigo, $valor, $limite, $expiracao, $is_limited, $this->acesso->getInfo('nickname'));
-        } else {
-            $_SESSION['emblema'] = 'Tivemos um problema ao tenta adicionar o código!';
-		    $_SESSION['emblema_tipo'] = 'danger';
-        }
-
-        header("Location: ".BASE."loja/codigos");
-        exit;
-
-    }
 
     /*
 		Configuração da Página de Edição de Códigos na Loja

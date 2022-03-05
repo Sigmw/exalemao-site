@@ -14,9 +14,9 @@
 
                     <div>
                         <?php if ($produto['valor_anterior'] != 0): ?>
-                            <p class="de">De <span><?php echo $produto['valor_anterior']; ?>SFI(s)</span></p>                    
+                            <p class="de">De <span><?php echo $produto['valor_anterior']; ?> AL-COINS</span></p>                    
                         <?php endif; ?>
-                        <p class="por">Por <span><?php echo $produto['valor']; ?>SFI(s)</span></p>
+                        <p class="por">Por <span><?php echo $produto['valor']; ?> AL-COINS</span></p>
                     </div>
                 </div>
             </div>
